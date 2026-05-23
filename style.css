@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
 }
 /* NAVBAR */
 .nav_home{
@@ -313,6 +313,7 @@
     padding-left: 11px;
     background-color: #232F3E;
     align-items: center;
+    margin: 0xp;
 }
 .nav_li{
     padding: 8px 5px;
@@ -398,7 +399,7 @@
 }
 @media (max-width:768px) {
 .hero_card{
-    max-width: 90%;
+    max-width: 100%;
     height: 470px;
     background-color: #FFFFFF;
     display: flex;
@@ -422,10 +423,10 @@
     text-decoration: none;
 }
 .card_section{
-    max-width: 90%;
+    max-width: 89%;
     position: absolute;
     top: 620px;
-    left: 40px;
+    left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
