@@ -308,16 +308,21 @@ body{
 }
 }
 /* navbar 2 */
-.nav_ul{
-    height: 60px;
-    color: #FFFFFF;
-    display: flex ;
-    list-style: none;
+.navbar2{
+    display: flex;
     gap: 15px;
-    padding-left: 11px;
     background-color: #232F3E;
     align-items: center;
-    margin: 0px;
+    height: 60px;
+    color: #FFFFFF;
+}
+.p_nav:hover{
+    border: 1px solid #FFFFFF;
+    padding: 8px 5px;
+    margin:5px 0px 6px ;
+}
+.nav_ul{
+display: none;
 }
 .nav_li{
     padding: 8px 5px;
@@ -329,12 +334,15 @@ body{
     margin:5px 0px 6px ;
 }
 @media (max-width:768px) {
+    .navbar2{
+        display: none;
+    }
     .nav_ul{
-    height: 102px;
+    height: 140px;
     color: #FFFFFF;
     display: grid;
-    /* grid-template-rows: repeat(6, 1fr); */
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-content: space-evenly;
     list-style: none;
     gap: 12px;
@@ -566,7 +574,7 @@ body{
 @media (max-width:768px) {
     .container3{
     margin-top: 1880px;
-    max-width: 100%;
+    max-width: 90%;
     width: 95%;
     margin-left: 10px;
     margin-right: 0px;
@@ -697,7 +705,7 @@ font-size: 12px;
 background-color: #CCCCCC;
 }
 .container6{
-    margin-top: 500px;
+    margin-top: 120px;
     max-width: 100%;
     margin-left: 120px;
     margin-right: 120px;
@@ -851,5 +859,166 @@ font-size: 11px;
 color: #DDDDDD;
 text-decoration: underline;
 gap: 20px;
+}
+}
+.dollar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68px;
+    background-color: #232F3E;
+    margin: 0px 0px;
+    gap: 20px;
+}
+.language{
+    width: 130px;
+    height: 33px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.lan{
+    color: #FFFFFF;
+}
+.usd{
+    width: 130px;
+    height: 33px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+.pak{
+    color: #FFFFFF;
+}
+.states{
+    width: 130px;
+    height: 33px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:768px) {
+    .dollar{
+        width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 68px;
+    background-color: #232F3E;
+    margin: 5px 0px;
+    gap: 20px;
+}
+.language{
+    width: 130px;
+    height: 33px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.pak{
+    width: 100%;
+    color: #FFFFFF;
+}
+}
+.li2{
+    list-style: none;
+    font-size: 12px;
+    color: #999999;
+}
+.lh2{
+    list-style: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 12px;
+}
+.comment2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #131A22;
+}
+.ul2{
+    display: flex;
+}
+.li2:hover{
+    list-style: none;
+    font-size: 12px;
+    color: #999999;
+    text-decoration: underline;
+}
+.lh2:hover{
+    list-style: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.condition1{
+    width: 100%;
+    height: 80px;
+    background-color: #131A22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.condition{
+    width: 100%;
+    height: 80px;
+    background-color: #131A22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.use{
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.use:hover{
+    font-size: 12px;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.year{
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+}
+@media (max-width:768px) {
+    .comment2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: #131A22;
+}
+.condition1{
+    width: 100%;
+    height: 80px;
+    background-color: #131A22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.condition{
+    width: 100%;
+    height: 80px;
+    background-color: #131A22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 }
